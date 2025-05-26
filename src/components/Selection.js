@@ -6,7 +6,7 @@ import "../styles/Child.css"
 const Selection= ({key,applyColor})=>{
 function bgColor(e){
     let target = e.target;
-
+target.setAttribute("data-testid",`${applyColor}`)
     target.style.backgroundColor=`${applyColor.backgroundColor}`
 
 
